@@ -1,7 +1,7 @@
 // Isi dua nilai ini setelah deploy Apps Script & membuat OAuth Client ID (lihat DEPLOY.md)
 window.CFG = {
   API_URL: 'https://script.google.com/macros/s/AKfycbx84gDKqvuFlx5I5jiNX4oUF9jkdsItcBNEIdFJ4INJTzq1czVjtP2bH5QfWl8U-AwU/exec',
-  GOOGLE_CLIENT_ID: 'ISI_CLIENT_ID.apps.googleusercontent.com',
+  GOOGLE_CLIENT_ID: '810081974362-kce4h30ljvn3qv02rt4315d15m11v9o9.apps.googleusercontent.com',
   KOLOM_MAX: 24,
   POSISI: ['Worship Leader', 'Pemusik', 'Singer', 'Usher', 'Multimedia', 'Liturgos'],
   KATEGORI_EVENT: ['Ibadah Rutin', 'Retret', 'Olahraga', 'Fellowship'],
