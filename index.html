@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#3b1a5e">
+<title>SI PEMUDA</title>
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div id="login">
+  <div class="card">
+    <svg class="i" viewBox="0 0 24 24" style="width:48px;height:48px;color:#3b1a5e"><path d="M12 2v5M10 4.500h4M12 7l-6 4v10h12V11zM9 21v-5h6v5M3 21h18"/></svg>
+    <h1>SI PEMUDA</h1><p>Masuk dengan akun Google yang didaftarkan pengurus.</p>
+    <div id="gbtn"></div><p id="lmsg" style="color:#b42318;margin:16px 0 0;font-size:14px"></p>
+  </div>
+</div>
+<div id="boot" class="hide" style="min-height:100vh;display:grid;place-items:center;color:#3b1a5e;font-weight:700">Memuat...</div>
+<div id="app" class="hide">
+  <aside>
+    <div class="brand" id="brand"></div>
+    <nav id="nav"></nav>
+    <div class="me" id="me"></div>
+  </aside>
+  <main>
+    <header>
+      <button class="ham" id="ham" aria-label="Menu"></button>
+      <h1 id="title">Dashboard</h1>
+      <div id="bellw" style="position:relative"><button class="ibtn" id="bell" aria-label="Notifikasi"><span id="bellc"></span></button></div>
+      <button class="ibtn" id="sync" aria-label="Muat ulang data"></button>
+      <div class="clock" id="clk"></div>
+    </header>
+    <div id="view"></div>
+  </main>
+  <nav class="bn" id="bn" aria-label="Menu utama"></nav>
+</div>
+<div id="toast" aria-live="polite"></div>
+<script src="js/config.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/api.js"></script>
+<script src="js/views1.js"></script>
+<script src="js/views2.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

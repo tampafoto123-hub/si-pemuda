@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pemuda Gereja</title>
+<meta name="description" content="Profil dan informasi umum Pemuda Gereja.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<style>
+:root{--p9:#3b1a5e;--p7:#5f3787;--p5:#8b3fd1;--p1:#f1e8fb;--bg:#f6f4f9;--mu:#6b6477}
+*{box-sizing:border-box;margin:0}body{font-family:Inter,system-ui,sans-serif;color:#1a1325;background:var(--bg);line-height:1.6}
+a{color:var(--p5)}.w{max-width:1040px;margin:auto;padding:0 20px}
+nav{position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid #ece7f3;z-index:5}
+nav .w{display:flex;align-items:center;gap:18px;height:60px}nav b{color:var(--p9);font-size:18px;display:flex;align-items:center;gap:10px;margin-right:auto}nav img{width:32px;height:32px;border-radius:8px;object-fit:cover}
+nav a{text-decoration:none;color:var(--p9);font-weight:600;font-size:14px}
+.hero{background:linear-gradient(150deg,var(--p9),#6b2fb0);color:#fff;padding:86px 0 90px;text-align:center}
+.hero h1{font-size:clamp(30px,6vw,52px);line-height:1.15;font-weight:800}.hero p{max-width:600px;margin:16px auto 0;opacity:.92;font-size:18px}
+.chips{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:26px}.chips span{background:rgba(255,255,255,.14);border-radius:99px;padding:8px 16px;font-size:14px}
+section{padding:54px 0}h2{color:var(--p9);font-size:28px;margin-bottom:18px}
+.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.c{background:#fff;border-radius:16px;padding:20px;box-shadow:0 1px 3px rgba(60,20,90,.07)}.c h3{color:var(--p9);margin-bottom:4px}.s{color:var(--mu);font-size:14px}
+.t{display:inline-block;background:var(--p1);color:var(--p9);font-weight:700;font-size:12px;padding:3px 10px;border-radius:8px;margin-bottom:6px}
+.pill{display:flex;gap:14px;align-items:flex-start}.pill svg{flex:none;width:24px;height:24px;stroke:var(--p5);fill:none;stroke-width:1.8}
+footer{background:var(--p9);color:#d9c6ef;text-align:center;padding:28px 20px;font-size:14px}
+.sk{display:none}
+</style>
+</head>
+<body>
+<nav><div class="w"><b id="brand">Pemuda Gereja</b><a href="#tentang">Tentang</a><a href="#kegiatan">Kegiatan</a><a href="#kontak">Kontak</a></div></nav>
+<header class="hero"><div class="w">
+  <h1 id="h">Pemuda yang bertumbuh dalam iman, persekutuan, dan pelayanan</h1>
+  <p id="tag">Selamat datang di rumah digital Pemuda Gereja kami.</p>
+  <div class="chips"><span id="jd">Ibadah Pemuda</span></div>
+</div></header>
+
+<section id="tentang"><div class="w"><h2>Tentang Kami</h2><div class="g">
+  <div class="c"><h3>Profil</h3><p class="s" id="about" style="white-space:pre-wrap">Pemuda gereja adalah wadah persekutuan bagi generasi muda untuk mengenal Kristus, bertumbuh bersama, dan melayani.</p></div>
+  <div class="c"><h3>Visi & Misi</h3><p class="s" id="visi" style="white-space:pre-wrap">Menjadi pemuda yang beriman, berkarakter, dan berdampak.</p></div>
+  <div class="c"><h3>Bidang Pelayanan</h3><p class="s">Musik & Worship, Multimedia, Dekorasi, Pengajaran, Usher, dan Kelompok Sel.</p></div>
+</div></div></section>
+
+<section id="kegiatan" style="background:#fff"><div class="w"><h2>Kegiatan Mendatang</h2><div class="g" id="ev"><div class="c s">Memuat kegiatan...</div></div>
+  <div id="wb" class="sk"><h2 style="margin-top:40px">Warta Terbaru</h2><div class="g" id="wt"></div></div></div></section>
+
+<section id="kontak"><div class="w"><h2>Kontak & Lokasi</h2><div class="g">
+  <div class="c pill"><svg viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><div><b>Alamat</b><p class="s" id="al">-</p></div></div>
+  <div class="c pill"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><div><b>Hubungi</b><p class="s" id="kt">-</p></div></div>
+  <div class="c pill"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><b>Ibadah</b><p class="s" id="ji">-</p></div></div>
+</div><p style="margin-top:18px" id="sos"></p></div></section>
+<footer>© <span id="yr"></span> <span id="fn">Pemuda Gereja</span></footer>
+<script>
+// Isi URL Apps Script yang sama dengan app/js/config.js. Halaman tetap tampil walau kosong.
+const API_URL = 'https://script.google.com/macros/s/ISI_DEPLOYMENT_ID/exec';
+const $ = id => document.getElementById(id);
+const BLN = ['Jan','Feb','Mar','Apr','Mei','Jun','Jul','Agu','Sep','Okt','Nov','Des'];
+const tgl = d => { const p = String(d).slice(0, 10).split('-'); return p.length === 3 ? `${+p[2]} ${BLN[+p[1]-1]} ${p[0]}` : d; };
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+$('yr').textContent = new Date().getFullYear();
+const set = (id, v) => { if (v) $(id).textContent = v; };
+(async () => {
+  let d; try { const c = sessionStorage.getItem('pub'); d = c ? JSON.parse(c) : null; if (!d) { const r = await fetch(API_URL + '?action=public'); d = (await r.json()).data; sessionStorage.setItem('pub', JSON.stringify(d)); } } catch (e) { $('ev').innerHTML = '<div class="c s">Informasi kegiatan belum tersedia.</div>'; return; }
+  const n = d.church_name || 'Pemuda Gereja'; document.title = n; $('fn').textContent = n;
+  $('brand').innerHTML = (d.logo_url ? `<img src="${esc(d.logo_url)}" alt="">` : '') + esc(n);
+  set('tag', d.tagline); set('about', d.about); set('visi', d.visi); set('al', d.alamat_gereja); set('kt', d.kontak); set('ji', d.jadwal_ibadah); set('jd', d.jadwal_ibadah);
+  $('sos').innerHTML = [d.instagram && `<a href="${esc(d.instagram)}" rel="noopener">Instagram</a>`, d.youtube && `<a href="${esc(d.youtube)}" rel="noopener">YouTube</a>`].filter(Boolean).join(' · ');
+  $('ev').innerHTML = (d.events || []).map(e => `<div class="c"><span class="t">${esc(e.kategori || 'Kegiatan')}</span><h3>${esc(e.nama)}</h3><p class="s">${tgl(e.tanggal)} ${esc(e.waktu || '')}<br>${esc(e.lokasi || '')}</p>${e.tema ? `<p style="margin-top:6px">${esc(e.tema)}</p>` : ''}</div>`).join('') || '<div class="c s">Belum ada kegiatan terjadwal.</div>';
+  if ((d.warta || []).length) { $('wb').style.display = 'block'; $('wt').innerHTML = d.warta.map(w => `<div class="c"><h3>${esc(w.judul)}</h3><p class="s">${tgl(w.tanggal)}</p><p>${esc(w.isi)}…</p></div>`).join(''); }
+})();
+</script>
+</body>
+</html>
